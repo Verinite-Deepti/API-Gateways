@@ -1,7 +1,14 @@
 spring:
-  h2:
-    console:
-      enabled: true
+  application:
+    name: spring-security-jwt-example
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
 
 server:
     port: 9192
