@@ -1,8 +1,5 @@
 package com.jwtauth.entity;
 
-
-
-
 public class AuthRequest {
 
     private String userName;
