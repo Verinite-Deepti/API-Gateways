@@ -1,18 +1,20 @@
-package com.creditcard;
+package com.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.context.annotation.Bean;
 
 import brave.sampler.Sampler;
 
 @SpringBootApplication
-public class CreditCardServiceApplication {
+@EnableEurekaServer
+public class EurekaServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CreditCardServiceApplication.class, args);
+		SpringApplication.run(EurekaServerApplication.class, args);
 	}
-
+	
 	@Bean
 	public Sampler defaultSampler() {
 		return ALWAYS_SAMPLE;
