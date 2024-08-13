@@ -11,8 +11,8 @@ import com.customerservice.model.CreditCard;
 
 @FeignClient(name = "creditcard-service")
 
-// Load balance will fetch the list of Server running for price-service and will
-// get the hostname and URL of prices-service
+// Load balance will fetch the list of Server running for creditcard-service and will
+// get the hostname and URL of creditcards-service
 @RibbonClient(name = "creditcard-service")
 public interface CustomerFeignClient {
 
