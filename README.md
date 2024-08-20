@@ -7,7 +7,7 @@
 - **Spring Ribbon (Load Balancer)** - Customer Service
 - **Spring Zuul Server** - API Gateway
 - **Spring Sleuth** - Configured in all applications
-- **Spring Zipkin Server** - [Download Zipkin Server JARs](http://localhost:9411/zipkin/)
+- **Spring Zipkin Server** - [Zipkin Server JARs](http://localhost:9411/zipkin/)
 
 ## Descriptions
 
