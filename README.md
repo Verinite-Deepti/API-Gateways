@@ -21,7 +21,7 @@ Zipkin Server aggregates logs from all microservices in a centralized location. 
 The Zuul API Gateway provides a single entry point for routing requests to various microservices. It also facilitates centralized authentication, monitoring, and logging. Start the Zuul server and access the endpoint at [http://localhost:7005/customer/customers/1](http://localhost:7005/customer/customers/1) after starting all applications.
 
 ### 4. CreditCard Service
-A simple web application exposing a REST API. To test load balancing, start multiple instances of this application on different ports (e.g., 7002, 8002, 8003). The default URL is [http://localhost:7002/creditcards/1}](http://localhost:7002/creditcards/1).
+A simple web application exposing a REST API. To test load balancing, start multiple instances of this application on different ports (e.g., 7002, 8002, 8003). The default URL is [http://localhost:7002/creditcards/1](http://localhost:7002/creditcards/1).
 
 ### 5. Customer Service
 This service demonstrates the integration of a circuit breaker using Spring Boot. It internally invokes the CreditCard Service, and Ribbon will handle load balancing across multiple CreditCard Service instances. The URL is [http://localhost:7001/customers/1](http://localhost:7001/customers/1). For more information on Hystrix and Ribbon, refer to the following articles:
@@ -30,4 +30,4 @@ This service demonstrates the integration of a circuit breaker using Spring Boot
 - [Spring Cloud Ribbon](http://www.waheedtechblog.com/2019/08/microservices-spring-cloud-ribbon-with.html)
 
 ### 6. Feign Client
-Demonstrates communication between microservices using Feign Client. Access the Feign client at [http://localhost:7003/feign/{id}](http://localhost:7003/feign/{id}).
+Demonstrates communication between microservices using Feign Client. Access the Feign client at [http://localhost:7003/feign/1](http://localhost:7003/feign/1).
